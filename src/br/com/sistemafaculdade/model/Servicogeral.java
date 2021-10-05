@@ -1,6 +1,6 @@
 package br.com.sistemafaculdade.model;
 
-public class Servicogeral extends Administrativo {
+public class Servicogeral extends Funcionarios {
 
 	public Servicogeral(String nomeCompleto, long cpf, double salario, String vinculo) {
 		super(nomeCompleto, cpf, salario, vinculo);

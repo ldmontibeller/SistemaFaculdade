@@ -1,6 +1,6 @@
 package br.com.sistemafaculdade.model;
 
-public class Professor extends Administrativo {
+public class Professor extends Funcionarios {
 	//ATRIBUTOS
 	private double horas;
 	private double salarioPrf;
