@@ -15,17 +15,20 @@ public class Teste {
 		System.out.println(f1.getNomeCompleto());
 		System.out.println(f2.getNomeCompleto());
 		System.out.println(f3.getNomeCompleto());
+		System.out.println();
 		
 		//Testando se cada funcionário retorna a bonificação correta
 		System.out.println(f1.getBonificacao());
 		System.out.println(f2.getBonificacao());
 		System.out.println(f3.getBonificacao());
+		System.out.println();
 		
 		//Testando as horas do professor
 		System.out.println(f3.getHoras());
 		f3.setHoras(10);
 		System.out.println(f3.getSalario());
 		System.out.println(f3.getBonificacao());
+		System.out.println();
 		
 		//Imprimindo os gastos
 		System.out.println(Gastos.getGastosIndividual(f3));
