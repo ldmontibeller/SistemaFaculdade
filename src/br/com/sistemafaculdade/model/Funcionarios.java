@@ -30,9 +30,19 @@ public abstract class Funcionarios {
 			return vinculo;
 		}
 		
-		//O jeito antigo de se fazer polimorfismo.
-		public double getBonificacao() {
-			return -2;
-		}
+		//O jeito correto de fazer polimorfismo é criar 
+		//um método abstrato
+		public abstract double getBonificacao();
 		
 }
+
+
+
+
+
+
+
+
+
+
+

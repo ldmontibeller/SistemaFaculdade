@@ -1,8 +1,7 @@
 package br.com.sistemafaculdade.controller;
 
-import br.com.sistemafaculdade.model.Administrativo;
-import br.com.sistemafaculdade.model.Professor;
-import br.com.sistemafaculdade.model.Servicogeral;
+import br.com.sistemafaculdade.model.*;
+
 
 public class Teste {
 	public static void main(String[] args) {
@@ -33,6 +32,53 @@ public class Teste {
 		//Imprimindo os gastos
 		System.out.println(Gastos.getGastosIndividual(f3));
 		
+		//Testando diretor
+		//Testando um diretor
+		Diretor f4 = new Diretor("Daniela Soares", 12345678955L, 10000, "dir");
+		System.out.println(f4.getBonificacao());
+		System.out.println();
 		
+		//Testar a classe gastos
+		System.out.println(Gastos.getGastosIndividual(f4));
+		System.out.println();
+		
+		//Posso passar vários funcionários diferentes e ir somando os gastos
+		/*System.out.println(Gastos.somarGastos(f4));
+		System.out.println(Gastos.somarGastos(f3));
+		System.out.println(Gastos.somarGastos(f2));
+		System.out.println(Gastos.somarGastos(f1));
+		System.out.println();
+		*/
+		
+		//Posso chamar a função várias vezes e imprimir só uma
+		Gastos.somarGastos(f4);
+		Gastos.somarGastos(f3);
+		Gastos.somarGastos(f2);
+		System.out.printf("Os gastos totais são: %.2f \n",Gastos.somarGastos(f1));
+		System.out.println();
+		
+		//E se quisesse só os gastos com diretor e administrativo
+		Gastos.somarGastos(f4);
+		System.out.printf("Os gastos só do diretor e do "
+				+ "adm são: %.2f \n",Gastos.somarGastos(f2));
 	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }
+
+
+
+
+
+
+
+
+
+
