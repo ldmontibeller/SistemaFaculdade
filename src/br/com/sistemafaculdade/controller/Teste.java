@@ -46,15 +46,12 @@ public class Teste {
 		
 		//Posso chamar a função várias vezes e imprimir só uma
 		//Será que essa maneira de somar os gastos está correta?
-		Gastos.somarGastos(f4);
-		Gastos.somarGastos(f3);
 		Gastos.somarGastosServicos(f2);
 		System.out.printf("Os gastos totais são: %.2f \n",Gastos.somarGastosAdm(f1));
 		System.out.println();
 		
 		//E se quisesse só os gastos com diretor e administrativo
 		Gastos.resetGastos();
-		Gastos.somarGastos(f4);
 		System.out.printf("Os gastos só do diretor e do "
 				+ "adm são: %.2f \n",Gastos.somarGastosAdm(f1));
 		System.out.println();
@@ -64,11 +61,15 @@ public class Teste {
 		System.out.println();
 		
 		//Testando se o programa entra na parte de adm ou srvcos
-		Gastos.somarGastos(f4);
 		System.out.println();
 		
 		//Testando o novo método com interface
-	
+		Gastos.resetGastos();
+		Gastos.somarGastosComVT(f2);
+		Gastos.getGastosComSalario(f2);
+		Gastos.getGastosComBonificacao(f2);
+		System.out.println(Gastos.somarGastos());
+		
 	}
 
 }

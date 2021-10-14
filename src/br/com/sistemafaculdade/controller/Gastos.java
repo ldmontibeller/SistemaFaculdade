@@ -23,7 +23,7 @@ public class Gastos {
 		return gastosVT;
 	}
 	
-	static public double somarGastos(Funcionarios obj) {
+	static public double somarGastos() {
 		gastoTotal = gastosSalario + gastosBonificacao + gastosVT;
 		return gastoTotal;
 	}
