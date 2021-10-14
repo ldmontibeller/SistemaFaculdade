@@ -12,17 +12,22 @@ public class Gastos {
 	}
 	
 	static public double somarGastos(Funcionarios obj) {
-//		if(obj.getClass().getSimpleName().equals("Administrativo")) {
-//			
-//		}
-//			o obj fosse um adm ou srvc
-//			fazia um tipo de controle de gastos
-//		senão
-//			fazia o controle sem o VT
-		
 		gastoTotal += obj.getSalario() + obj.getBonificacao();
 		return gastoTotal;
 	}
+	
+//	static public double somarGastos(Funcionarios obj) {
+//		if(obj.getClass().getSimpleName().equals("Administrativo")
+//			|| obj.getClass().getSimpleName().equals("Servicogeral") ) {
+////			System.out.println("O PROGRAMA CHEGOU AQUI!");
+//			gastoTotal += obj.getSalario() + obj.getBonificacao() + obj.getValeTransporte();
+//		}
+////		senão
+////			fazia o controle sem o VT
+//		
+//		gastoTotal += obj.getSalario() + obj.getBonificacao();
+//		return gastoTotal;
+//	}
 	
 	//Será que dois novos métodos é a melhor saída?
 	static public double somarGastosAdm(Administrativo obj) {

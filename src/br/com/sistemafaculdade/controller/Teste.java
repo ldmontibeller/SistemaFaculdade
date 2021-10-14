@@ -67,6 +67,10 @@ public class Teste {
 		
 		//Testando o que a gente encontra com o método getClass
 		System.out.println(f1.getClass().getSimpleName().equals("Administrativo"));
+		System.out.println();
+		
+		//Testando se o programa entra na parte de adm ou srvcos
+		Gastos.somarGastos(f4);
 	}
 
 }
