@@ -29,17 +29,11 @@ public class Teste {
 		System.out.println(f3.getBonificacao());
 		System.out.println();
 		
-		//Imprimindo os gastos
-		System.out.println(Gastos.getGastosIndividual(f3));
 		
 		//Testando diretor
 		//Testando um diretor
 		Diretor f4 = new Diretor("Daniela Soares", 12345678955L, 1000, "dir");
 		System.out.println(f4.getBonificacao());
-		System.out.println();
-		
-		//Testar a classe gastos
-		System.out.println(Gastos.getGastosIndividual(f4));
 		System.out.println();
 		
 		//Posso passar vários funcionários diferentes e ir somando os gastos
@@ -71,6 +65,10 @@ public class Teste {
 		
 		//Testando se o programa entra na parte de adm ou srvcos
 		Gastos.somarGastos(f4);
+		System.out.println();
+		
+		//Testando o novo método com interface
+	
 	}
 
 }
