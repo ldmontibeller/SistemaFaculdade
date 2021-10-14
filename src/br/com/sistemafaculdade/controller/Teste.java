@@ -34,7 +34,7 @@ public class Teste {
 		
 		//Testando diretor
 		//Testando um diretor
-		Diretor f4 = new Diretor("Daniela Soares", 12345678955L, 10000, "dir");
+		Diretor f4 = new Diretor("Daniela Soares", 12345678955L, 1000, "dir");
 		System.out.println(f4.getBonificacao());
 		System.out.println();
 		
@@ -51,26 +51,24 @@ public class Teste {
 		*/
 		
 		//Posso chamar a função várias vezes e imprimir só uma
+		//Será que essa maneira de somar os gastos está correta?
 		Gastos.somarGastos(f4);
 		Gastos.somarGastos(f3);
-		Gastos.somarGastos(f2);
-		System.out.printf("Os gastos totais são: %.2f \n",Gastos.somarGastos(f1));
+		Gastos.somarGastosServicos(f2);
+		System.out.printf("Os gastos totais são: %.2f \n",Gastos.somarGastosAdm(f1));
 		System.out.println();
 		
 		//E se quisesse só os gastos com diretor e administrativo
+		Gastos.resetGastos();
 		Gastos.somarGastos(f4);
 		System.out.printf("Os gastos só do diretor e do "
-				+ "adm são: %.2f \n",Gastos.somarGastos(f2));
+				+ "adm são: %.2f \n",Gastos.somarGastosAdm(f1));
+		System.out.println();
+		
+		//Testando o que a gente encontra com o método getClass
+		System.out.println(f1.getClass().getSimpleName().equals("Administrativo"));
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 }
 
 

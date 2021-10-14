@@ -11,4 +11,8 @@ public class Servicogeral extends Funcionarios {
 	public double getBonificacao() {
 		return super.getSalario() * 0.10;
 	}
+	
+	public double getValeTransporte() {
+		return 200;
+	}
 }

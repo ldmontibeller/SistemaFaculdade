@@ -10,6 +10,10 @@ public class Administrativo extends Funcionarios {
 		return getSalario() * 0.05;
 	}
 	
+	public double getValeTransporte() {
+		return getSalario() *0.06;
+	}
+	
 }
 
 
