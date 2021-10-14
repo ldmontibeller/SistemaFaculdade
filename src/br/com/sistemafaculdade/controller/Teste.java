@@ -2,7 +2,6 @@ package br.com.sistemafaculdade.controller;
 
 import br.com.sistemafaculdade.model.*;
 
-
 public class Teste {
 	public static void main(String[] args) {
 		//Instanciados 3 objetos
@@ -69,6 +68,17 @@ public class Teste {
 		Gastos.getGastosComSalario(f2);
 		Gastos.getGastosComBonificacao(f2);
 		System.out.println(Gastos.somarGastos());
+		System.out.println();
+		
+		//Testando vigia
+		//Repare como vigia só está definido que é
+		//uma classe que é aplicável o VT
+		Vigia f5 = new Vigia();
+		Gastos.resetGastos();
+		System.out.println(Gastos.somarGastosComVT(f5));
+		System.out.println(Gastos.somarGastosComVT(f2));
+		
+		
 		
 	}
 

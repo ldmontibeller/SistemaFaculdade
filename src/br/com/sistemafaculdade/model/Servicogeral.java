@@ -13,6 +13,6 @@ public class Servicogeral extends Funcionarios implements AplicavelVT {
 	}
 	
 	public double getValeTransporte() {
-		return 200;
+		return AplicavelVTUtil.getVALORVT();
 	}
 }
